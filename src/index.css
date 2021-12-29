@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-container {
+    @apply w-full max-w-3xl sm:mt-6 mx-auto overflow-hidden rounded-xl drop-shadow-2xl bg-slate-900 border-2 border-yellow-500 text-slate-100 text-lg 
+  }
+
+  .headline {
+    @apply text-3xl md:text-4xl py-5 border-b-2 border-yellow-500 px-10  bg-gray-900 font-bold text-violet-400
+  }
+  .headline-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-600
+  }
+
+  .form-style {
+    @apply flex flex-col  border rounded-lg border-yellow-600 
+  }
+  .input-double{
+    @apply px-6 py-3 text-slate-100 border-none  outline-none bg-gray-900 placeholder-gray-400 focus:placeholder-transparent  focus-within:ring-0 rounded-t-lg
+  }
+
+
+  .input-style{
+    @apply px-6 py-3 text-slate-100 border-none rounded-t-lg outline-none bg-gray-900 placeholder-gray-400 focus:placeholder-transparent  focus-within:ring-amber-500
+  }
+
+  .btn-purple {
+    @apply font-bold px-4 py-3 text-sm tracking-wider text-white uppercase transition-colors duration-200 transform bg-gradient-to-r from-yellow-600 via-orange-400 to-yellow-600 hover:bg-amber-700 z-30 rounded-b-lg 
+  }
+
+  .btn-grey {
+    @apply px-4 py-3 text-sm font-medium tracking-wider text-slate-100 uppercase transition-colors duration-200 transform bg-gray-700 hover:bg-gray-600 focus:bg-gray-600 focus:outline-none
+  }
+
+  .btn-connect{
+    @apply bg-gradient-to-l from-yellow-400 via-orange-400 to-yellow-600 px-5 py-3 mt-5 rounded-lg text-slate-100 font-bold
+  }
+
+  .bank-owner-section{
+    @apply bg-indigo-900 bg-opacity-60 text-white w-4/5 mx-auto border-2 rounded-xl border-indigo-500 mb-10
+  }
+}
